@@ -1,7 +1,6 @@
-$(function () {
-  $(document).scroll(function () {
-    var $nav = $("nav");
-    var $hero = $(".hero");
-    $nav.toggleClass("scrolled", $(this).scrollTop() > $hero.height());
-  });
+$(() => {
+	$(document).scroll(function () {
+		const $nav = $('nav');
+		$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+	});
 });
